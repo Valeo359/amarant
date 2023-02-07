@@ -1,0 +1,195 @@
+body{
+    background-color: #3F3F3F;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: #FFFFFF;
+}
+
+.slider-buttons svg{
+  stroke: #fff !important;
+}
+
+.header{
+    &-logo{
+      svg{
+        fill: #ffffff;
+      }
+    }
+    &-nav-item{
+      a{
+        color: #ffffff;
+      }
+    }
+}
+
+.theme-switch{
+    .slider {
+      border: 1px solid #ffffff;
+      &:before {
+        background-color: #ffffff;
+      }
+    }
+}
+.close-btn{
+  svg{
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+}
+
+.header{
+  &-nav-list.show{
+    background: radial-gradient(135.42% 10141.64% at -16.04% 0%, rgb(63 63 63 / 90%) 0%, rgb(63 63 63 / 0%) 100%);
+  }
+}
+
+.home{
+  .main-screen{
+    &-contacts{
+      background: radial-gradient(135.42% 10141.64% at -16.04% 0%, rgba(63, 63, 63, 0.9) 0%, rgba(151, 151, 151, 0.225) 100%);
+      box-shadow: 0px 0px 30px #2C2C2C;    
+      .city{
+        svg{
+          fill: #ffffff;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
+    .scroll-down-btn{
+      svg{
+        fill: #FFFFFF;
+        stroke: #FFFFFF;
+      }
+    }
+    .callback-btn{
+      box-shadow: 0 0 0 3px #3f3f3f, 0 0 0 5px #f2aeaf;
+    }
+  }
+
+  .about-us{
+    &-background{
+      background: #575656;
+    }
+    &-list{
+      .list-item{
+        &-arrow {
+          svg{
+            fill: #ffffff;
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .price{
+    .title-with-line{
+      &::before{
+        background-color: #fff;    
+      }
+      &::after{
+        background-color: #fff; 
+      }
+    }
+    &-main-slider{
+      &-buttons{
+        .prev, .next{
+          background-color: #3f3f3f;
+        }
+        svg{
+          width: 76px;
+          height: 60px;
+          stroke: #fff;
+          fill: transparent;
+        }
+      }
+      &-item{
+        .slider-title{
+          padding: 15px;
+          border-bottom: 2px solid #fff;
+          font-size: 60px;
+          text-align: center;
+        }
+      }
+    }
+    &-slider-popup{
+      &-item{
+        .slider-number{
+          color: #fff !important;
+        }
+      }
+    }
+  }
+  .education{
+    .white{
+      display: none;
+    }
+    .dark{
+      display: block;
+    }
+    &-instagram{
+      color: #fff;
+      span::after{
+        background-color:#fff;
+      }
+      svg{
+        stroke: #fff;
+      }
+    }
+  }
+  .certificate{
+    &-background{
+      background-color: #575656;
+      h5{
+        color: #3F3F3F;
+      }
+    }
+  }
+  .faq{
+    &-accardion{
+      .accardion-item{
+        border-bottom: 1px solid #fff;
+      }
+      .accardion-title{
+        svg{
+          fill: #fff;
+          stroke: #fff;
+        }
+      }
+    }
+  }
+  .our-work{
+    background-color: #575656;
+  }
+  
+  .call-back-popup{
+    p{
+      color: #fff;
+    }
+    input{
+      background-color: #404040 !important;
+      color: #fff;
+    }
+  }
+}
+
+.popup{
+  background-color: rgb(255 255 255 / 70%);
+  .popup-content{
+    background-color: #575656 !important;
+  }
+}
+
+.footer{
+  &-background{
+    background-image: url('../assets/img/footer/dark-map.jpg')
+  }
+}

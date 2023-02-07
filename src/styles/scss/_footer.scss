@@ -1,0 +1,139 @@
+.footer{
+    position: relative;
+    z-index: 2;
+    &-background{
+        background-image: url('../assets/img/footer/white-map.jpg');
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding: 70px 0px;
+        cursor: pointer;
+    }
+    .popup-content{
+        width: 90vw;
+        height: 90vh;
+    }
+    .map-responsive iframe{
+        width: 100%;
+        height: 84vh;
+    }
+    .contacts{
+        padding-bottom: 50px;
+        background-color: #7E4646;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 450px;
+        height: 450px;
+        font-size: 25px;
+        .phone-number{
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .shedule{
+            margin-bottom: 15px;
+        }
+        .address{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 45px;
+            .street{
+                font-weight: 700;
+            }
+            .city{
+                font-size: 18px;
+            }
+        }
+        .social-media{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                display: block;
+                width: fit-content;
+                height: fit-content;
+                margin: 0px 2px;
+            }
+        }
+    }
+    .copyriting{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 14px;
+        height: 100px;
+        background-color: #7E4646;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer{
+        &-background{
+            background-position: -400px; 
+            padding: 70px 0px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        &-background{
+            padding: 35px 0px;
+            background-position: center center;
+            background-size: cover;
+        }
+        &-logo{
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+        .contacts{
+            width: 240px;
+            height: 240px;
+            font-size: 13px;
+            padding-bottom: 0px;
+            .phone-number{
+                margin-bottom: 6px;
+            }
+            .shedule{
+                margin-bottom: 6px;
+            }
+            .address{
+                margin-bottom: 15px;
+                .street{
+                    font-weight: 700;
+                }
+                .city{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer{
+        .container{
+            width: 100%;
+            max-width: none;
+            padding: 0px;
+        }
+        &-background{
+            padding: 0px;
+        }
+        .contacts{
+            width: 100%;
+            height: 100%;
+            padding-bottom: 30px;
+        }
+        .copyriting{
+            display: none;
+        }
+    }
+}

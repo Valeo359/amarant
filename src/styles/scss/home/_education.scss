@@ -1,0 +1,254 @@
+.education{
+    position: relative;
+    overflow-x: clip;
+    .container{
+        position: relative;
+        z-index: 3;
+    }
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        right: -30%;
+        bottom: -50%;
+        z-index: 2;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(252, 178, 179, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
+    }
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        left: -30%;
+        top: -15%;
+        z-index: 2;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(252, 178, 179, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
+    }
+    .title-divided{
+        position: relative;
+        width: fit-content;
+        .title-second-word{
+            left: 30%;
+            position: relative;
+        }
+    }
+    .small-title{
+        text-align: center;
+    }
+    .title{
+        margin-bottom: 30px;
+    }
+    h4{
+        margin-bottom: 40px;
+        font-family: "AlumniSans", sans-serif;
+        font-size: 40px;
+    }
+    ul{
+        padding-left: 25px;
+    }
+    .dark{
+        display: none;
+    }
+    .white{
+        display: block;
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-pic{
+        width: 35%;
+        margin-top: 140px;
+        max-height: 800px;
+        img{
+            width: 100%;
+        }
+    }
+    &-content{
+        width: 30%;
+        padding-left: 15px;
+    }
+    &-sign{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        img{
+            width: 80%;
+        }
+        .online-entry{
+            margin-top: 40px;
+        }
+    }
+    &-instagram{
+        display: flex;
+        align-items: center;
+        font-size: 48px;
+        color: #3C3030;
+        text-decoration: none;
+        margin-top: 60px;
+        span{
+            display: block;
+            margin-left: 15px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                height: 1px;
+                background-color: #3C3030;
+            }
+        }
+        svg{
+            width: 76px;
+            height: 60px;
+            stroke: #3C3030;
+            fill: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .education{
+        &::after{
+            width: 500px;
+            height: 500px;
+            right: -25%;
+            bottom: -40%;
+        }
+        &::before{
+            width: 500px;
+            height: 500px;
+            left: -30%;
+            top: -15%;
+        }
+        h4{
+            font-size: 30px;
+        }
+        &-pic{
+            margin-top: 80px;
+        }
+        &-content{
+            width: 45%;
+        }
+        &-sign{
+            width: 20%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .education{
+        .title-divided{
+            
+            .title-second-word{
+                left: 20%;
+            }
+         }
+        &-wrapper{
+            flex-wrap: wrap;
+        }
+        &-pic{
+            width: 50%;
+            margin-top: 35px;
+        }
+        &-content{
+            width: 50%;
+        }
+        &-sign{
+            width: 100%;
+            img{
+                display: none;
+            }
+        }
+        &-instagram{
+            margin-top: 25px;
+            font-size: 35px;
+            svg{
+                width: 40px;
+                height: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .education{
+        position: relative;
+        &::after{
+            width: 500px;
+            height: 500px;
+            right: -25%;
+            bottom: 0%;
+        }
+        &::before{
+            display: none;
+        }
+        .title{
+            margin-bottom: 15px !important;
+        }
+        .title-divided{
+           display: block;
+           margin-right: auto;
+            .title-second-word{
+                left: 20%;
+            }
+        }
+        .small-title{
+            margin-bottom: 0px;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0px;
+        }
+        ul{
+            padding-left: 15px;
+        }
+        &-wrapper{
+            flex-wrap: wrap;
+        }
+        &-pic{
+            width: 60%;
+            margin-top: 35px;
+            order: 2;
+        }
+        &-content{
+            order: 1;
+            width: 100%;
+            padding: 0px;
+        }
+        &-sign{
+            order: 3;
+            width: 100%;
+            img{
+                display: none;
+            }
+        }
+        &-instagram{
+            position: absolute;
+            right: 5px;
+            bottom: 100px;
+            right: 30px;
+            margin-top: 0px;
+            font-size: 18px;
+            span{
+                margin-left: 10px;
+                &::after{
+                    bottom: 4px;
+                }
+            }
+            svg{
+                width: 40px;
+                height: 30px;
+            }
+        }   
+    }
+}

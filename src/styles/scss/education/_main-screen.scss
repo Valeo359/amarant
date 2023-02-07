@@ -1,0 +1,207 @@
+.courses-main-screen{
+    margin-top: 30px;
+    .container{
+        position: relative;
+    }
+    .courses-title{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        mix-blend-mode: difference;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -20px;
+    }
+    .courses-slider-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .courses-slider{
+        width: 72%;
+        display: flex;
+        flex-direction: row-reverse;
+        &-item{
+            padding: 1px;
+            position: relative;
+        }
+        .courses-pic-arrow{
+            width: 120px;
+            position: absolute;
+            z-index: 10;
+            bottom: 15px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            .text{
+                position: absolute;
+                top: 0;
+                animation: moving 5s infinite linear;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        .slick-list{
+            width: 60%;
+            // position: relative;
+            // &::after,
+            // &::before{
+            //     display: block;
+            //     content: '';
+            //     width: 100%;
+            //     max-width: 280px;
+            //     height: 1px;
+            //     background-color: #3F3F3F;
+            // }
+        }   
+        .slick-dots{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+            position: static;
+            li{
+                height: auto;
+                margin: 0;
+                text-align: left;
+                margin-bottom: 35px;
+                width: fit-content;
+                color: #9C9C9C;
+            }
+            li.slick-active{
+                position: relative;
+                color: #3F3F3F;
+                &::before{
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    background-color: #3F3F3F;
+                    display: block;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .slick-arrows{
+        display: none;
+    }
+    .slider-counter{
+        width: 26%;
+        font-family: "HelloBranch", sans-serif;
+        font-size: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .separator{
+            width: 70px;
+            display: block;
+            height: 1px;
+            background-color: #000;
+            margin: 0px 20px;
+        }
+    }
+    .text-line{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        svg{
+            stroke: #3F3F3F;
+            fill: #3F3F3F;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .courses-main-screen{
+        .courses-slider{
+            .slick-dots {
+                padding-right: 10px;
+                li{
+                    font-size: 20px;
+                    margin-bottom: 18px;
+                    span{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .slider-counter{
+            padding-left: 10px;
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .courses-main-screen{
+        .with-lines{
+            &::before,
+            &::after{
+                display: none;
+            }
+        }
+        .courses-slider-wrapper{
+            flex-direction: column;
+        }
+        .courses-slider{
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            .courses-pic-arrow{
+                width: 80px;
+            }
+            .slick-list{
+                width: 100%;
+            }
+            .slick-dots{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px;
+                margin-top: 30px;
+                li{
+                    display: none;
+                    margin: 0px;
+                }
+                li.slick-active{
+                    display: block;
+                }
+            }
+        }
+        .slick-arrows{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 25px;
+            position: absolute;
+            bottom: 65px;
+            svg{
+                fill: #3F3F3F;
+                stroke: #3F3F3F;
+            }
+        }
+        .slider-counter{
+            padding: 0px;
+            width: 100%;
+            justify-content: center;
+            .separator{
+                width: 40px;
+                margin: 0px 7px;
+            }
+        }
+    }
+}
+
+@keyframes moving {
+    100% {transform: rotate(360deg);}
+}

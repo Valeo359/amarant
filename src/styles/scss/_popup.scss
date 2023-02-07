@@ -1,0 +1,40 @@
+.popup{
+    position: fixed;
+    width: 101vw;
+    background-color: rgba(63, 63, 63, 0.7);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    opacity: 0;
+    height: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    &-content{
+        max-width: 1440px;
+        max-height: 90vh;
+        background-color: #fff;
+        position: relative;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    &-close{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1000;
+    }
+    &.show{
+        opacity: 1;
+        height: 101vh;
+    }
+}
+@media screen and (max-width: 1460px) {
+    .popup{
+        &-content{
+            max-width: 90vw;
+        }
+    }
+}

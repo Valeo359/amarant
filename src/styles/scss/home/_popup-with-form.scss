@@ -1,0 +1,192 @@
+.popup-with-form{
+    .popup-content{
+        padding: 10px 50px;
+        background-color: #FFF9F6;
+    }
+    p{
+        text-align: center;
+        color: #000;
+    }
+    .title{
+        color: #9C9C9C;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    input{
+        border-radius: 20px;
+        padding: 0px 20px;
+        border: 2px solid transparent;
+        height: 80px;
+        background-color: #fff;
+        font-size: 40px;
+        font-family: 'AlumniSans', sans-serif;
+        &:focus{
+            border: 2px solid #FCB2B3;
+        }
+        &:focus-visible{
+            outline: none;
+        }
+    }
+    .popup-form-wrapper{
+        display: flex;
+        margin-bottom: 35px;
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button {  
+            opacity: 1;
+            background-color: transparent;
+            outline:none;
+            -webkit-appearance: none;
+        }  
+    }
+    .phone{
+        width: 100%;
+        margin-bottom: 40px;
+    }   
+    .popup-form-button{
+        margin-bottom: 40px;
+    }
+    .policy{
+        font-size: 15px;
+        text-align: center;
+        display: block;
+    }
+    .input-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+        align-items: stretch;
+    }
+    input.error{
+        border: 2px solid red !important;
+    }
+    label.error{
+        margin: auto;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+    }
+    .number-input{
+        position: relative;
+        max-width: 120px;
+        input{
+            width: 120px;
+            height: 80px;
+            max-height: 80px;
+        }
+        .number-arrows{
+            position: absolute;
+            top: 28px;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding-right: 10px;
+            right: 0;
+        }
+        button{
+            height: 10px;
+            width: 10px;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            font-size: 0;
+            opacity: 0.5;
+            &:hover{
+                transform: none;
+                opacity: 1;
+            }
+        }
+        .add{
+            background-image: url('../assets/img/arrow-top.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }   
+        .minus{
+            background-image: url('../assets/img/arrow-bottom.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+    .date-wrapper{
+        margin-left: 25px;
+    }
+    .date{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+#certificate-popup{
+    .popup-form-wrapper{
+        margin-bottom: 10px;
+    }
+    .phone{
+        margin-bottom: 10px;
+    }
+    .name{
+        margin-bottom: 40px;
+    }
+    .popup-form-button{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .popup-with-form{
+        .phone{
+            margin-bottom: 30px;
+        }
+        .popup-form-button{
+            width: 250px;
+            height: 60px;
+            font-size: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popup-with-form{
+        .popup-content{
+            padding: 30px 40px;
+        }
+        .popup-form-wrapper{
+            flex-wrap: wrap;
+        }
+        .number-input{
+            max-width: 50%;
+            width: calc(50% - 5px);
+            input{
+                width: 100%;
+            }
+        }
+        .date-wrapper{
+            margin-top: 5px;
+            width: 100%;
+            margin-left: 0px;
+        }
+        .phone{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .popup-with-form{
+        .popup-content{
+            padding: 10px 25px;
+        }
+        .date{
+            font-size: 30px;
+        }
+        .phone{
+            font-size: 30px;
+            text-align: center;
+        }
+        .popup-form-wrapper{
+            margin-bottom: 5px;
+        }
+    }
+}

@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "AlumniSans", sans-serif;
+  background-color: #F3EEE8;
+  color: #3C3030;
+  font-size: 25px;
+  overflow-x: hidden;
+}
+h1{
+  color: #7E4646;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'HelloBranch', sans-serif;
+  margin: 0px;
+  font-weight: 400;
+}
+
+ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+.title-with-line{
+  text-align: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  span{
+      width: 100%;
+      height: auto;
+      line-height: normal;
+      padding: 0px 50px;
+      white-space: nowrap;
+  }
+  &::before{
+      content: '';
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color: #3F3F3F;    
+  }
+  &::after{
+      content: '';
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color: #3F3F3F; 
+  }
+}
+
+button{
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.05);
+    transition: .2s all ease;
+  }
+}
+
+.online-entry{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.container{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0px 75px;
+}
+
+.title{
+  font-size: 130px;
+  line-height: 60%;
+  margin: 20px 0px;
+}
+
+.small-title{
+  font-family: "AlumniSans", sans-serif;
+  color: #C8AAAA;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.pink-button{
+  background-color: #F2AEAF;
+  border-radius: 20px;
+  width: 250px;
+  height: 60px;
+  border: none;
+  font-size: 30px;
+  font-family: "AlumniSans", sans-serif;
+}
+.button-center{
+  display: block;
+  margin: 0 auto;
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+[class*="slick"]:focus-visible{
+  outline: none;
+}
+
+.close-btn{
+  cursor: pointer;
+  svg{
+    fill: #7E4646;
+    stroke: #7E4646;
+  }
+}
+section{
+  margin-bottom: 120px;
+}
+.title-divided{
+  position: relative;
+  .title-first-word{
+    position: relative;
+    width: fit-content;
+  }
+  .title-second-word{
+    position: relative;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) { 
+  body{
+    font-size: 23px;
+  }
+  .title{
+    font-size: 120px;
+  }
+  .small-title{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .container{
+    padding: 0px 40px;
+  }
+  body{
+    font-size: 16px;
+  }
+  section{
+    margin-bottom: 60px;
+  }
+  .pink-button{
+    width: 130px;
+    height: 31px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .small-title{
+    font-size: 20px;
+  }
+  .title{
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .container{
+    padding: 0px 25px;
+  }
+  section{
+    margin-bottom: 50px;
+  }
+  .pink-button{
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 20px;
+  }
+}

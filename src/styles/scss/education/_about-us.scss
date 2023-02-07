@@ -1,0 +1,108 @@
+.about-us{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 1200px;
+        height: 1200px;
+        left: -30%;
+        bottom: -50%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(252, 178, 179, 0.5) 0%, rgba(217, 217, 217, 0) 100%);
+        z-index: 1;
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+    .text-block{
+        width: 35%;
+    }
+    .title{
+        font-size: 140px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #3f3f3f;
+    }
+    .small-pic-mob{
+        display: none;
+    }
+    .about-us-pic{
+        position: relative;
+        max-width: 60%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        img{
+            width: 100%;
+        }
+        .small-pic{
+            position: absolute;
+            right: 65%;
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-us{
+        .title{
+            font-size: 110px;
+        }
+        .about-us-pic{
+            max-width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .about-us{
+        .title{
+            font-size: 85px;
+        }
+        .about-us-pic{
+            max-width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 758px) {
+    .about-us{
+        .title{
+            font-size: 65px;
+            padding-bottom: 15px;
+        }
+        .about-us-pic{
+            max-width: 50%;
+            .small-pic{
+                bottom: -40px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .about-us{
+        &-wrapper{
+            flex-direction: column;
+        }
+        .text-block{
+            width: 100%;
+        }
+        .about-us-pic{
+            max-width: 100%;
+            margin-top: 50%;
+            justify-content: flex-start;
+            .main-pic{
+                width: 70%;
+            }
+            .small-pic{
+                bottom: 65%;
+                right: 0;
+            }
+        }
+        .small-pic{
+            display: none;
+        }
+        .small-pic-mob{
+            display: block;
+        }
+    }
+}

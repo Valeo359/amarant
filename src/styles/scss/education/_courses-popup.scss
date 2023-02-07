@@ -1,0 +1,196 @@
+.courses-popups{
+    .popup-content{
+        position: relative;
+        width: 100%;
+        padding: 0;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: -35%;
+            z-index: 0;
+
+            background: radial-gradient(50% 50% at 50% 50%, rgba(252, 178, 179, 0.5) 0%, rgba(217, 217, 217, 0) 100%);
+        }
+    }
+    .popup-wrapper{
+        position: relative;
+        padding: 80px 40px 60px 40px;
+        z-index: 1;
+    }
+    .popup-container{
+        display: flex;
+    }
+    .number{
+        color: #3C3030;
+        font-size: 110px;
+        font-family: 'HelloBranch';
+        position: absolute;
+        opacity: 0.5;
+        top: 0;
+        left: 20px;
+    }
+    .popup-close{
+        right: 15px;
+        top: 15px;
+    }
+    .popup-title{
+        margin: 0px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #3f3f3f;
+        font-weight: 600;
+        margin-right: 30px;
+    }
+    .popup-list{
+        padding-top: 35px;
+        max-height: 350px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #F3EEE8; 
+            border-radius: 20px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #FCB2B3; 
+            border-radius: 20px;
+        }
+        li{
+            margin-bottom: 20px;
+            padding-left: 45px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            &::before{
+                content: '';
+                display: block;
+                width: 20px;
+                background-image: url('../assets/img/courses/popups/popup-arrow.svg');
+                height: 20px;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+    .popup-pic{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: auto;
+            max-height: 430px;
+            margin-bottom: 25px;
+        }
+    }
+    .popup-text{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 65px;
+    }
+    .online-entry{
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .courses-popups{
+        .popup-pic{
+            width: 35%;
+        }
+        .certificate{
+            font-size: 20px;
+        }
+        .popup-pic{
+            img{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .courses-popups{
+        .popup-title{
+            font-size: 25px;
+        }
+        .popup-wrapper{
+            padding: 55px 30px 30px 30px;
+        }
+        .number{
+            font-size: 80px;
+        }
+        .certificate{
+            font-size: 15px;
+        }
+        .popup-text{
+            margin-left: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .courses-popups{
+        .popup-list{
+            padding-top: 25px;
+        }
+        .popup-title{
+            padding-bottom: 15px;
+        }
+        .popup-text{
+            margin-left: 20px;
+        }
+        .popup-pic{
+            width: 40%;
+        }
+        .certificate{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .courses-popups{
+        .popup-content{
+            overflow: scroll;
+        }
+        .popup-container{
+            flex-direction: column-reverse;
+        }
+        .popup-wrapper{
+            padding: 90px 20px 25px 20px;
+        }
+        .popup-title{
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        .popup-list{
+            padding-top: 20px;
+        }
+        .popup-text{
+            width: 100%;
+            margin: 0px;
+        }
+        .popup-pic{
+            width: 100%;
+            margin-top: 40px;
+            img{
+                max-height: none;
+            }
+        }
+        .certificate{
+            font-size: 20px;
+        }
+        .online-entry{
+            margin-top: 40px;
+            margin: 0 auto;
+        }
+    }
+}

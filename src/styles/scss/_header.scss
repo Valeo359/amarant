@@ -1,0 +1,185 @@
+.header{
+    &-wrapper{
+      display: flex;
+      align-items: center;
+    }
+    &-logo{
+      position: relative;
+      svg{
+        fill: #3C3030;
+      }
+    }
+    &-nav{
+      width: 100%;
+    }
+    &-nav-list{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      padding-left: 75px;
+      margin: 0px;
+    }
+    &-nav-item{      
+      list-style: none;
+      font-size: 35px;
+      a{
+        font-family: 'HelloBranch';
+        text-transform: uppercase;
+        color: #3C3030;
+        text-decoration: none;
+      }
+    }
+    .nav-item-instagram{
+      display: none;
+    }
+    .mobile-close-btn{
+      display: none;
+    }
+    .mobile-menu-btn{
+      display: none;
+    }
+    &-instagram{
+      display: none;
+    }
+}
+
+  
+.theme-switch{
+    position: relative;
+    display: flex;
+    width: 34px;
+    height: 18px;
+    input {display:none;}
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #000000;
+      -webkit-transition: .4s;
+      transition: .4s;
+      &:before {
+        position: absolute;
+        content: "";
+        height: 103%;
+        width: 18px;
+        top: 0;
+        left: 0px;
+        bottom: 0px;
+        background-color: #FCB2B3;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+    }
+    .slider.round {
+      border-radius: 34px;
+    }
+    .slider.round:before {
+      border-radius: 50%;
+    }    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(14px);
+      -ms-transform: translateX(14px);
+      transform: translateX(14px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .header{
+    &-logo{
+      svg{
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+    &-nav-item{
+      font-size: 27px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header{
+    &-logo{
+      width: 129px;
+      height: 129px;
+      svg{
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+    &-nav-item{
+      font-size: 20px;
+    }
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  .header{
+    &-nav-list{
+      padding-left: 20px;
+    }
+    &-logo{
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header{
+    .show{
+      position: fixed;
+      overflow: scroll;
+      height: 101vh;
+      width: 101vw;
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      background-color: #F3EEE8;
+      backdrop-filter: blur(1.5rem);
+      left: 0;
+      top: 0;
+      padding-top: 120px;
+      padding-left: 0px;
+      background: radial-gradient(135.42% 10141.64% at -16.04% 0%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      box-shadow: 0px 0px 30px #BFAF9C;
+      backdrop-filter: blur(20px);
+      .header-nav-item{
+        font-size: 35px;
+        margin-bottom: 30px;
+      }
+      .nav-item-instagram{
+        display: block;
+      }
+    }
+    &-nav{
+      margin-top: 50px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-nav-list{
+      display: none;
+    }
+    &-logo{
+      display: none;
+    }
+    .mobile-close-btn{
+      display: block;
+    }
+    .mobile-menu-btn{
+      display: block;
+      width: fit-content;
+      svg{
+        fill: #7E4646;
+      }
+    }
+    &-instagram{
+      display: block;
+    }
+  }
+}

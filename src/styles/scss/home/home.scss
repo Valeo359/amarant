@@ -1,0 +1,17 @@
+.home{
+    .title-divided{
+        span{
+          display: block;
+          line-height: 60%;
+        }
+    }
+    @import './main-screen';
+    @import './about-us';
+    @import './price';
+    @import './education';
+    @import './certification';
+    @import './faq';
+    @import './our-work';
+    @import './popup-with-form';
+    @import './popup-all-price';
+}

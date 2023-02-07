@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/home.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" title="theme" href="#">
+    <script src="js/theme.js"></script>
+</head>
+<body class="home">
+    <header class="header main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <svg width="141" height="168" viewBox="0 0 141 168" fill="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0_1_166" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="141" height="168">
+                        <rect width="141" height="168" fill="url(#pattern0)"/>
+                        </mask>
+                        <g mask="url(#mask0_1_166)">
+                        <rect width="141" height="168" fill=""/>
+                        </g>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1_166" transform="translate(-0.343972 -0.214286) scale(0.00103006 0.000864512)"/>
+                        </pattern>
+                        <image id="image0_1_166" width="1680" height="1680" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                              
+                </div>
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item mobile-close-btn close-btn">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.25024L16 16.0468" stroke="" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M16 1L1 15.7965" stroke="" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="./pages/coureses.html">education</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#price">Price</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#contacts">contacts</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <label class="theme-switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                        <li class="header-nav-item nav-item-instagram">
+                            <a href="#" class="header-instagram"></a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu-btn">
+                        <svg width="40" height="20" viewBox="0 0 40 20" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="2" rx="1" fill=""/>
+                            <rect y="9" width="40" height="2" rx="1" fill=""/>
+                            <rect y="18" width="40" height="2" rx="1" fill=""/>
+                        </svg>  
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-screen">
+        <div class="container">
+            <div class="main-screen-wrapper">
+                <h1 class="main-title title-divided">
+                    <span class="title-first-word">amarant</span> 
+                    <span class="title-second-word">beauty</span>
+                </h1>
+                <div class="main-screen-picture">
+                    <img src="./assets/img/main-screen-pic.png" alt="">
+                </div>
+                <div class="main-screen-contacts">
+                    <span class="city">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21.0001C10.7369 19.9227 9.56619 18.7416 8.5 17.4691C6.9 15.5581 5 12.7121 5 10.0001C4.99931 8.61505 5.40951 7.26094 6.17869 6.10912C6.94788 4.9573 8.04147 4.05955 9.32107 3.52949C10.6007 2.99943 12.0087 2.86088 13.3671 3.13138C14.7255 3.40189 15.9731 4.06928 16.952 5.04909C17.6038 5.69795 18.1203 6.46963 18.4719 7.31947C18.8234 8.1693 19.0029 9.08042 19 10.0001C19 12.7121 17.1 15.5581 15.5 17.4691C14.4338 18.7416 13.2631 19.9227 12 21.0001ZM12 7.00009C11.2044 7.00009 10.4413 7.31616 9.87868 7.87877C9.31607 8.44138 9 9.20444 9 10.0001C9 10.7957 9.31607 11.5588 9.87868 12.1214C10.4413 12.684 11.2044 13.0001 12 13.0001C12.7957 13.0001 13.5587 12.684 14.1213 12.1214C14.6839 11.5588 15 10.7957 15 10.0001C15 9.20444 14.6839 8.44138 14.1213 7.87877C13.5587 7.31616 12.7957 7.00009 12 7.00009Z" fill=""/>
+                        </svg>
+                        Київ
+                    </span>
+                    <span class="street">вул. Гната Хоткевича 12</span>
+                    <a href="https://easyweek.com.ua/amarant-beauty" class="online-entry pink-button">Online запис</a>
+                </div>
+                <a class="scroll-down-btn" href="#about">
+                    <svg width="" height="" viewBox="0 0 41 40" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_11_1304)">
+                        <path d="M28.751 27.3036C28.751 27.3036 21.9859 30.3192 20.7174 38.3065" stroke="" stroke-width="1.35302" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M12.6837 27.3036C12.6837 27.3036 19.4488 30.3192 20.7173 38.3065" stroke="" stroke-width="1.35302" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M20.7173 37.4099L20.7173 0.896484" stroke="" stroke-width="1.35302" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_11_1304">
+                        <rect width="39.1216" height="40.5905" fill="" transform="translate(40.5898) rotate(90)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <button class="callback-btn">
+                <svg width="" height="" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_9_331)">
+                    <path d="M10.2545 11.9483C10.2545 11.9483 11.6164 11.1686 11.9729 10.9812C12.3285 10.7932 12.6968 10.7458 12.9205 10.8824C13.2592 11.0896 16.1035 12.9816 16.343 13.1491C16.5825 13.317 16.6978 13.7963 16.3685 14.2658C16.0406 14.7354 14.5276 16.5921 13.8865 16.5723C13.2444 16.5514 10.5747 16.4929 5.54033 11.4572C0.506981 6.42318 0.447445 3.75279 0.426927 3.11068C0.406408 2.46889 2.26314 0.955593 2.7327 0.627302C3.20294 0.299348 3.68293 0.422793 3.84976 0.653539C4.03947 0.916239 5.90965 3.75145 6.11551 4.07638C6.25645 4.29838 6.20464 4.66871 6.01662 5.02458C5.8296 5.38113 5.04991 6.74307 5.04991 6.74307C5.04991 6.74307 5.59953 7.68051 7.45827 9.53892C9.31735 11.3977 10.2545 11.9483 10.2545 11.9483Z" stroke="white" stroke-miterlimit="10"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_9_331">
+                    <rect width="16.8182" height="16.8182" fill="white" transform="translate(0.0908203 0.0908203)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <div class="about-us-background">
+            <div class="about-us-wrapper">
+                <div class="about-us-pic">
+                    <img src="./assets/img/about-us-main-pic.png" alt="about us pic">
+                </div>
+                <div class="about-us-content">
+                    <h2 class="small-title">Про нас</h2>
+                    <h3 class="title about-us-title">about us</h3>
+                    <span class="about-us-description">Amarant - це б’юті простір заснований в 2017 році. </span>
+                    <ul class="about-us-list">
+                        <span class="list-title">Обираючи нас - ви обираєте можливість :</span>
+                        <li class="list-item">
+                            <span class="list-item-arrow">
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_159)">
+                                    <path d="M10 0.733154C10 0.733154 11.0963 3.07192 14 3.51044" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10 6.28742C10 6.28742 11.0963 3.94865 14 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M14 3.51013L1 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_159">
+                                    <rect width="15" height="7" fill=""/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            зробити манікюр + педікюр + брови за 2 години
+                        </li>
+                        <li class="list-item">
+                            <span class="list-item-arrow">
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_159)">
+                                    <path d="M10 0.733154C10 0.733154 11.0963 3.07192 14 3.51044" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10 6.28742C10 6.28742 11.0963 3.94865 14 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M14 3.51013L1 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_159">
+                                    <rect width="15" height="7" fill=""/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            зробити make-up та зачіску одночасно
+                        </li>
+                        <li class="list-item">
+                            <span class="list-item-arrow">
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_159)">
+                                    <path d="M10 0.733154C10 0.733154 11.0963 3.07192 14 3.51044" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10 6.28742C10 6.28742 11.0963 3.94865 14 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M14 3.51013L1 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_159">
+                                    <rect width="15" height="7" fill=""/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            забути про туш, бо тут працюють найкращі lashмейкери
+                        </li>
+                        <li class="list-item">
+                            <span class="list-item-arrow">
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_159)">
+                                    <path d="M10 0.733154C10 0.733154 11.0963 3.07192 14 3.51044" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10 6.28742C10 6.28742 11.0963 3.94865 14 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M14 3.51013L1 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_159">
+                                    <rect width="15" height="7" fill=""/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            зробити фарбування, лікування чи просто підстригти  волосся
+                        </li>
+                        <li class="list-item">
+                            <span class="list-item-arrow">
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_159)">
+                                    <path d="M10 0.733154C10 0.733154 11.0963 3.07192 14 3.51044" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10 6.28742C10 6.28742 11.0963 3.94865 14 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M14 3.51013L1 3.51013" stroke="" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_159">
+                                    <rect width="15" height="7" fill=""/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            отримати класний настрій, випити запашну каву, чи прохолодний коктейль
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price" id="price">
+        <div class="container">
+            <h2 class="small-title">Прайс</h2>
+            <h3 class="title title-with-line">
+                <span>price list</span>
+            </h3>
+            <div class="price-main-slider">
+                <div class="slider-buttons price-main-slider-buttons">
+                    <div class="prev">
+                        <svg width="" height="" viewBox="0 0 78 60" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="29" transform="rotate(-180 30 30)" stroke="" stroke-width="2"/>
+                            <g clip-path="url(#clip0_4_248)">
+                            <path d="M36.125 42.5C36.125 42.5 31.5 32.5 19.25 30.625" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M36.125 18.75C36.125 18.75 31.5 28.75 19.25 30.625" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M20.625 30.625L76.625 30.625" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_4_248">
+                            <rect width="60" height="60" fill="" transform="translate(78 60) rotate(-180)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="next">
+                        <svg width="" height="" viewBox="0 0 78 60" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="48" cy="30" r="29" stroke="" stroke-width="2"/>
+                            <g clip-path="url(#clip0_4_241)">
+                            <path d="M41.875 17.5C41.875 17.5 46.5 27.5 58.75 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M41.875 41.25C41.875 41.25 46.5 31.25 58.75 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M57.375 29.375L1.375 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_4_241">
+                            <rect width="60" height="60" fill=""/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="price-main-slider-list">
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-1.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>pedicure</h6>
+                        </div>
+                    </div>
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-2.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>make-up</h6>
+                        </div>
+                    </div>
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-3.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>manicure</h6>
+                        </div>
+                    </div>
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-4.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>dye hair</h6>
+                        </div>
+                    </div>
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-5.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>podiatry</h6>
+                        </div>
+                    </div>
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-6.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>nail man</h6>
+                        </div>
+                    </div>
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-7.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>hair</h6>
+                        </div>
+                    </div>
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-8.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>brows</h6>
+                        </div>
+                    </div>
+                    <div class="price-main-slider-item">
+                        <div class="slider-pic">
+                            <img src="./assets/img/price-list/main-pic-9.png" alt="">
+                        </div>
+                        <div class="slider-title">
+                            <h6>lashes</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="popup price-popup">
+                <div class="popup-content">
+                    <div class="popup-close close-btn">
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.25024L16 16.0468" stroke="" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 1L1 15.7965" stroke="" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="slider-buttons popup-slider-buttons">
+                        <div class="prev">
+                            <svg width="" height="" viewBox="0 0 78 60" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="29" transform="rotate(-180 30 30)" stroke="" stroke-width="2"/>
+                                <g clip-path="url(#clip0_4_248)">
+                                <path d="M36.125 42.5C36.125 42.5 31.5 32.5 19.25 30.625" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M36.125 18.75C36.125 18.75 31.5 28.75 19.25 30.625" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M20.625 30.625L76.625 30.625" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_248">
+                                <rect width="60" height="60" fill="" transform="translate(78 60) rotate(-180)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="next">
+                            <svg width="" height="" viewBox="0 0 78 60" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="48" cy="30" r="29" stroke="" stroke-width="2"/>
+                                <g clip-path="url(#clip0_4_241)">
+                                <path d="M41.875 17.5C41.875 17.5 46.5 27.5 58.75 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M41.875 41.25C41.875 41.25 46.5 31.25 58.75 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M57.375 29.375L1.375 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_241">
+                                <rect width="60" height="60" fill=""/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="price-slider-popup">
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                01
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-1.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                02
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-2.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                03
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-3.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                04
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-4.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                05
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-5.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-5.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                06
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-6.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-6.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                07
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-7.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-7.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                08
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-8.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-8.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price-slider-popup-item">
+                            <div class="slider-number">
+                                09
+                            </div>
+                            <div class="slider-left-block">
+                                <div class="slider-pictures">
+                                    <div class="slider-main-pic">
+                                        <img src="./assets/img/price-list/main-pic-9.png" alt="">
+                                    </div>
+                                    <div class="slider-second-pic">
+                                        <img src="./assets/img/price-list/popup-slider/small-pic-9.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-right-block">
+                                <div class="slider-title">
+                                    <h6>Pedicure</h6>
+                                </div>
+                                <table class="price-slider-table">
+                                    <tr>
+                                        <th class="name">Педикюр</th>
+                                        <th class="executor">Майстер</th>
+                                        <th class="executor">Старший майстер</th>
+                                        <th class="executor">Топ майстер</th>
+                                    </tr>
+                                    <tr class="first-tr">
+                                        <td class="type">SPA педикюр(скраб+догляд) <br>
+                                            + апаратна обробка стопи+педикюр пальчиків <br>
+                                            + покриття гель-лак <br>
+                                            *зняття нашого покриття у подарунок <br>
+                                        </td>
+                                        <td class="price">700</td>
+                                        <td class="price">750</td>
+                                        <td class="price">800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр(пальчики) + покриття гель-лак</td>
+                                        <td class="price">600</td>
+                                        <td class="price">650</td>
+                                        <td class="price">700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики) + SPA(скраб+догляд)
+                                            + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)
+                                            + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                        <td class="price">450</td>
+                                        <td class="price">500</td>
+                                        <td class="price">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="type">Чоловічий Педикюр (пальчики)</td>
+                                        <td class="price">350</td>
+                                        <td class="price">400</td>
+                                        <td class="price">450</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-see-all">
+                <a href="https://easyweek.com.ua/amarant-beauty" class="online-entry pink-button button-center">Записатися</a>
+                <button href="" data-popup="full-price-popup" class="see-all-btn">
+                    Дивитись все 
+                    <svg width="78" height="60" viewBox="0 0 78 60" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_204_399)">
+                        <path d="M41.875 17.5C41.875 17.5 46.5 27.5 58.75 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M41.875 41.25C41.875 41.25 46.5 31.25 58.75 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M57.375 29.375L1.375 29.375" stroke="#3C3030" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_204_399">
+                        <rect width="60" height="60" fill=""/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="education">
+        <div class="container">
+            <h2 class="small-title">Навчання</h2>
+            <div class="education-wrapper">
+                <div class="education-pic">
+                    <img class="white" src="./assets/img/home-education-main-pic-white.png" alt="">
+                    <img class="dark" src="./assets/img/home-education-main-pic-black.png" alt="">
+                </div>
+                <div class="education-content">
+                    <h3 class="title title-divided">
+                        <span class="title-first-word">amarant</span> 
+                        <span class="title-second-word">academy</span>
+                    </h3>
+
+                    <h4>З Владою Владиченко</h4>
+
+                    <p>
+                        Привіт, мене звати Владислава - я засновниця Amarant,
+                        nail-інструктор,
+                        та майстер з 7-ми річним досвідом.
+                    </p>
+                    <p>
+                        Вже 4 роки я випускаю nail-майстрів та навчаючи їх всьому, що знаю сама.
+                        В програмі академії є:
+                        <ul>
+                            <li>базовий курс “Майстер з Нуля”</li>
+                            <li>підвищення кваліфікації “Швидкий та безпечний комбі” та “Сучасне нарощення”</li>
+                        </ul>
+                    </p>
+                    <p>
+                        В нас можливі як групові та індивідуальні курси. Навчання проводять практикуючі топ-майстри з інструкторським досвідом.
+                    </p>
+                    <a class="education-instagram" href="#">
+                        <svg width="" height="" viewBox="0 0 78 60" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="48" cy="30" r="29" stroke="" stroke-width="2"/>
+                            <g clip-path="url(#clip0_4_241)">
+                            <path d="M41.875 17.5C41.875 17.5 46.5 27.5 58.75 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M41.875 41.25C41.875 41.25 46.5 31.25 58.75 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M57.375 29.375L1.375 29.375" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_4_241">
+                            <rect width="60" height="60" fill=""/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span>
+                            instagram
+                        </span>
+                    </a>
+                </div>
+                <div class="education-sign">
+                    <img src="assets/img/home-education-small.png" alt="">
+                    <a href="https://easyweek.com.ua/amarant-beauty" class="online-entry pink-button button-center">Записатися</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificate">
+        <div class="certificate-background">
+            <h5>amarant <br> beauty</h5>
+        </div>
+        <div class="container">
+            <div class="certificate-wrapper">
+                <div class="certificate-content">
+                    <h3 class="title">certificate</h3>
+                    <div class="certificate-pic">
+                        <img src="./assets/img/certificate-pic.png" alt="">
+                    </div>
+                    <h2 class="small-title">
+                        Подарунковий сертифікат<Br>
+                        на будь-яку суму
+                    </h2>
+                    <button class="pink-button certificate-btn">Отримати</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="small-title">Питання - відповідь</h2>
+            <h3 class="title">faq</h3>
+            <div class="faq-accardion">
+                <div class="first-block">
+                    <div class="accardion-item">
+                        <div class="accardion-title">
+                            1.  Lorem, ipsum dolor.
+                            <div class="accardion-arrow">
+                                <svg width="16" height="16" viewBox="0 0 25 16" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_355_465)">
+                                    <path d="M22.4165 3.91675C22.4165 3.91675 14.0832 7.00008 12.5207 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M2.62516 3.91675C2.62516 3.91675 10.9585 7.00008 12.521 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_355_465">
+                                    <rect width="16" height="25" fill="" transform="translate(25) rotate(90)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="accardion-content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ab.
+                        </div>
+                    </div>
+                    <div class="accardion-item">
+                        <div class="accardion-title">
+                            1.  Lorem, ipsum dolor.
+                            <div class="accardion-arrow">
+                                <svg width="16" height="16" viewBox="0 0 25 16" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_355_465)">
+                                    <path d="M22.4165 3.91675C22.4165 3.91675 14.0832 7.00008 12.5207 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M2.62516 3.91675C2.62516 3.91675 10.9585 7.00008 12.521 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_355_465">
+                                    <rect width="16" height="25" fill="" transform="translate(25) rotate(90)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="accardion-content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ab.
+                        </div>
+                    </div>
+                    <div class="accardion-item">
+                        <div class="accardion-title">
+                            1.  Lorem, ipsum dolor.
+                            <div class="accardion-arrow">
+                                <svg width="16" height="16" viewBox="0 0 25 16" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_355_465)">
+                                    <path d="M22.4165 3.91675C22.4165 3.91675 14.0832 7.00008 12.5207 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M2.62516 3.91675C2.62516 3.91675 10.9585 7.00008 12.521 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_355_465">
+                                    <rect width="16" height="25" fill="" transform="translate(25) rotate(90)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="accardion-content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ab.
+                        </div>
+                    </div>
+                </div>
+                <div class="second-block">
+                    <div class="accardion-item">
+                        <div class="accardion-title">
+                            1.  Lorem, ipsum dolor.
+                            <div class="accardion-arrow">
+                                <svg width="16" height="16" viewBox="0 0 25 16" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_355_465)">
+                                    <path d="M22.4165 3.91675C22.4165 3.91675 14.0832 7.00008 12.5207 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M2.62516 3.91675C2.62516 3.91675 10.9585 7.00008 12.521 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_355_465">
+                                    <rect width="16" height="25" fill="" transform="translate(25) rotate(90)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="accardion-content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ab.
+                        </div>
+                    </div>
+                    <div class="accardion-item">
+                        <div class="accardion-title">
+                            1.  Lorem, ipsum dolor.
+                            <div class="accardion-arrow">
+                                <svg width="16" height="16" viewBox="0 0 25 16" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_355_465)">
+                                    <path d="M22.4165 3.91675C22.4165 3.91675 14.0832 7.00008 12.5207 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M2.62516 3.91675C2.62516 3.91675 10.9585 7.00008 12.521 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_355_465">
+                                    <rect width="16" height="25" fill="" transform="translate(25) rotate(90)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="accardion-content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ab.
+                        </div>
+                    </div>
+                    <div class="accardion-item">
+                        <div class="accardion-title">
+                            1.  Lorem, ipsum dolor.
+                            <div class="accardion-arrow">
+                                <svg width="16" height="16" viewBox="0 0 25 16" fill="" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_355_465)">
+                                    <path d="M22.4165 3.91675C22.4165 3.91675 14.0832 7.00008 12.5207 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M2.62516 3.91675C2.62516 3.91675 10.9585 7.00008 12.521 15.1667" stroke="" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_355_465">
+                                    <rect width="16" height="25" fill="" transform="translate(25) rotate(90)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="accardion-content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ab.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-work">
+        <div class="container">
+            <h2 class="small-title">Наші роботи</h2>
+            <h3 class="title">our instagram</h3>
+            <a href="">
+                <div class="our-work-wrapper">
+                    <img src="./assets/img/our-work/work-1.jpg" alt="">
+                    <img src="./assets/img/our-work/work-2.jpg" alt="">
+                    <img src="./assets/img/our-work/work-3.jpg" alt="">
+                    <img src="./assets/img/our-work/work-4.jpg" alt="">
+                    <img src="./assets/img/our-work/work-5.jpg" alt="">
+                    <img src="./assets/img/our-work/work-6.jpg" alt="">
+                    <img src="./assets/img/our-work/work-7.jpg" alt="">
+                    <img src="./assets/img/our-work/work-8.jpg" alt="">
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="footer-background">
+            <div class="container">
+                <div class="contacts">
+                    <div class="footer-logo">
+                        <img src="./assets/img/footer/Logo.png" alt="">
+                    </div>
+                    <div class="phone-number">+38 (093) 459 56 48</div>
+                    <div class="shedule">Працюємо кожного дня з 09.00 до 21.00</div>
+                    <div class="address">
+                        <span class="street">вул. Гната Хоткевича 12</span>
+                        <span class="city">02094, м. Київ, Київська область</span>
+                    </div>
+                    <div class="social-media">
+                        <a href="#">
+                            <img src="./assets/img/footer/Instagram.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/footer/Telegram.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/footer/Facebook.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyriting">
+            <p>Салон краси -  «Amarant» ©</p>
+            <p>Політика конфіденційності</p>
+            <p>Всі права захищені, 2022</p>
+        </div>
+
+        <div class="popup map-popup">
+            <div class="popup-content">
+                <div class="popup-close close-btn">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.25024L16 16.0468" stroke="" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M16 1L1 15.7965" stroke="" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2126771907215!2d30.6323246!3d50.4557642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5526891af25%3A0x4dcc27682eb8f2b7!2z0YPQuy4g0JPQvdCw0YLQsCDQpdC-0YLQutC10LLQuNGH0LAsIDEyLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LAsIDAyMDAw!5e0!3m2!1sru!2sie!4v1674208104628!5m2!1sru!2sie" width="800" height="600" style="border:0;" allowfullscreen frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popups">
+        <div id="callback-popup" class="popup callback-popup popup-with-form ">
+            <div class="popup-content">
+                <div class="popup-close close-btn">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.25024L16 16.0468" stroke="" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M16 1L1 15.7965" stroke="" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <form id="call-back-form" class="popup-form" type="submit">
+                    <p>Хочете ми зателефонуємо Вам рівно о:</p>
+                    <h5 class="title">callback</h5>
+                    <div class="popup-form-wrapper">
+                        <div class="number-input input-wrapper">
+                            <div class="number-arrows">
+                                <button class="minus" type="button">-</button>
+                                <button class="add" type="button">+</button>
+                            </div>
+                            <input type="number" name="hours" min="9" max="18" placeholder="09" maxlength="2"> 
+                        </div>
+                        <div class="number-input input-wrapper">
+                            <div class="number-arrows">
+                                <button class="minus" type="button">-</button>
+                                <button class="add" type="button">+</button>
+                            </div>
+                            <input type="number" min="0" max="59" placeholder="00" maxlength="2" name="minutes" id="minutes">
+                        </div>
+                        <div class="input-wrapper date-wrapper">
+                            <input class="date" type="date" name="data" min="2020-01-02" max="9999-12-31" placeholder="день/місяць">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="tel" class="phone" placeholder="+380 (99) 999 99 99" value="+380" name="phone" maxlength="18">
+                    </div>
+
+                    <button class="callback-submit popup-form-button pink-button button-center">Чекаю на дзвінок</button>
+                    <span class="policy">
+                        Натискаючи на кнопку я даю згоду на обробку персональних даних та <br>
+                        погоджуюсь з умовами оферти та політики конфіденційності.
+                    </span>
+                </form>
+            </div>
+        </div>
+
+        <div id="certificate-popup" class="popup certificate-popup popup-with-form">
+            <div class="popup-content">
+                <div class="popup-close close-btn">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.25024L16 16.0468" stroke="" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M16 1L1 15.7965" stroke="" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <form id="certificate-popup" class="popup-form" type="submit">
+                    <p>Отримати подарунковий сертифікат</p>
+                    <h5 class="title">certificate</h5>
+                    <div class="popup-form-wrapper">
+                        <input type="number" class="sum" placeholder="сума" name="sum" >
+                        <div class="input-wrapper date-wrapper">
+                            <input class="date" type="date" name="data" min="2020-01-02" max="9999-12-31" placeholder="день/місяць">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="tel" class="phone" placeholder="+380 (99) 999 99 99" value="+380" name="phone" maxlength="18">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" class="name" placeholder="Ім'я" name="name">
+                    </div>
+                    <button class="certificate-submit popup-form-button pink-button button-center">Чекаю на дзвінок</button>
+                    <span class="policy">
+                        Натискаючи на кнопку я даю згоду на обробку персональних даних та <br>
+                        погоджуюсь з умовами оферти та політики конфіденційності.
+                    </span>
+                </form>
+            </div>
+        </div>
+
+        <div class="full-price-block">
+            <div class="popup full-price-popup">
+                <div class="popup-content">
+                    <div class="popup-close close-btn">
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.25024L16 16.0468" stroke="" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M16 1L1 15.7965" stroke="" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+
+                    <div class="full-price-list">
+                        <div class="full-price-item">
+                            <p class="small-title">Прайс</p>
+                            <div class="title title-with-line"><span>price list</span></div>
+                            <table>
+                                <tr class="start-table">
+                                    <th class="title">
+                                        Manicure
+                                        <span class="small-title">(Манікюр)</span>
+                                    </th>
+                                    <th>Майстер</th>
+                                    <th>
+                                        Старший<br>
+                                        майстер
+                                    </th>
+                                    <th>
+                                        Топ<br>
+                                        майстер     
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Манікюр + покриття гель-лак<br>
+                                        (*зняття нашого покриття у подарунок)
+                                    </td>
+                                    <td>600</td>
+                                    <td>650</td>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <td>Манікюр (комбінований/європейський)</td>
+                                    <td>350</td>
+                                    <td>400</td>
+                                    <td>450</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Покриття гель-лак</td>
+                                    <td>400</td>
+                                    <td>450</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Men's manicure
+                                        <span class="small-title">(Чоловічий манікюр)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Манікюр + покриття гель-лак<br>
+                                        (*зняття нашого покриття у подарунок)</td>
+                                    <td>600</td>
+                                    <td>650</td>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <td>Манікюр (комбінований/європейський)</td>
+                                    <td>350</td>
+                                    <td>400</td>
+                                    <td>450</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Покриття гель-лак</td>
+                                    <td>400</td>
+                                    <td>450</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Pedicure
+                                        <span class="small-title">(Педикюр)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SPA педикюр(скраб+догляд) + апаратна обробка стопи<br>
+                                        +педикюр пальчиків+ покриття гель-лак *зняття нашого покриття у подарунок</td>
+                                    <td>700</td>
+                                    <td>750</td>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <td>Педикюр(пальчики) + покриття гель-лак</td>
+                                    <td>600</td>
+                                    <td>650</td>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <td>Педикюр (пальчики) + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                    <td>450</td>
+                                    <td>500</td>
+                                    <td>550</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Педикюр (пальчики) </td>
+                                    <td>350</td>
+                                    <td>400</td>
+                                    <td>450</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Men's pedicure
+                                        <span class="small-title">(Чоловічий педикюр)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Педикюр (пальчики)<br>
+                                        + SPA(скраб+догляд) + апаратна обробка стопи</td>
+                                    <td>450</td>
+                                    <td>500</td>
+                                    <td>550</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Педикюр (пальчики)</td>
+                                    <td>350</td>
+                                    <td>400</td>
+                                    <td>450</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Coated nails
+                                        <span class="small-title">(Покриття лак)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Покриття лаком клієнта</td>
+                                    <td>100</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Покриття нашим лаком<br>
+                                        *покриття прозорим лаком (у подарунок до послуги манікюру)</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Nail polish removing
+                                        <span class="small-title">(Зняття покриття)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Зняття чужого покриття/зняття без наступного покриття</td>
+                                    <td>70</td>
+                                    <td>70</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>Зняття гель лак (один ніготь)</td>
+                                    <td>10</td>
+                                    <td>10</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Зняття + опил форми</td>
+                                    <td>170</td>
+                                    <td>170</td>
+                                    <td>170</td>
+                                </tr>
+                                <tr>
+                                    <td>Зняття гелю/акрилу/нарощенних</td>
+                                    <td>150</td>
+                                    <td>150</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Зняття звичайного лаку</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Nail extension
+                                        <span class="small-title">(Нарощування нігтів)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Нарощування + манікюр + однотонне покриття:<br><br> 1-2 довжина</td>
+                                    <td></td>
+                                    <td>900</td>
+                                    <td>950</td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>950</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>1050</td>
+                                    <td>1100</td>
+                                </tr>
+                                <tr>
+                                    <td>Корекція: <br><br> 1-2 довжина</td>
+                                    <td></td>
+                                    <td>800</td>
+                                    <td>850</td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>850</td>
+                                    <td>900</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>950</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Additionally
+                                        <span class="small-title">(Додатково)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Укріплення нігтів (ціна за 1 ніготь)</td>
+                                    <td>10</td>
+                                    <td>10</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Ремонт нігтів (ціна за 1 ніготь)</td>
+                                    <td>15</td>
+                                    <td>15</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Нарощування зламаного нігтя ( ціна за 1 ніготь)</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Design
+                                        <span class="small-title">(Дизайн)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Ізі (сухі блискітки, глітер, фольга, градієнт блисткітками, мазки, наклейки) : <br>1 ніготь</td>
+                                    <td>15-20</td>
+                                    <td>15-20</td>
+                                    <td>15-20</td>
+                                </tr>
+                                <tr>
+                                    <td>10 нігтів</td>
+                                    <td>100-150</td>
+                                    <td>100-150</td>
+                                    <td>100-150</td>
+                                </tr>
+                                <tr >
+                                    <td>Медіум (легка геометрія, френч, омбре, лунки) <br><br> 1 ніготь</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>10 нігтів</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>Хард (малюнки від руки, хард геометрія, комбіновані дизайни) <br><br> 1 ніготь</td>
+                                    <td>30-50</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>10 нігтів</td>
+                                    <td>250-450</td>
+                                    <td>250-450</td>
+                                    <td>250-450</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Podiatry
+                                        <span class="small-title">(Подологія)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Апаратний педикюр</td>
+                                    <td></td>
+                                    <td>600</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Апаратний педикюр пальців</td>
+                                    <td></td>
+                                    <td>400</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Апаратна обробка стопи</td>
+                                    <td></td>
+                                    <td>200</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Зачистка проблемних нігтів: <br><br> 1й рівень складності (1 ніготь)</td>
+                                    <td></td>
+                                    <td>150</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2й рівень складності (1 ніготь)</td>
+                                    <td></td>
+                                    <td>200</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Видалення стержневої мозолі (один мозоль)</td>
+                                    <td></td>
+                                    <td>200</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>*додаткова зачистка тріщин</td>
+                                    <td></td>
+                                    <td>200</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="full-price-item">
+                            <p class="small-title">Прайс</p>
+                            <div class="title title-with-line"><span>price list</span></div>
+                            <table>
+                                <tr class="start-table">
+                                    <th class="title">
+                                        Manicure
+                                        <span class="small-title">(Манікюр)</span>
+                                    </th>
+                                    <th></th>
+                                    <th>
+                                        Старший<br>
+                                        майстер
+                                    </th>
+                                    <th>
+                                        Топ<br>
+                                        майстер     
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Нарощування куточків (1/2 )
+                                    </td>
+                                    <td></td>
+                                    <td>650</td>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <td>Класика</td>
+                                    <td></td>
+                                    <td>700</td>
+                                    <td>750</td>
+                                </tr>
+                                <tr>
+                                    <td>Полуторний об’єм</td>
+                                    <td></td>
+                                    <td>750</td>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <td>2D</td>
+                                    <td></td>
+                                    <td>750</td>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <td>3D</td>
+                                    <td></td>
+                                    <td>800</td>
+                                    <td>850</td>
+                                </tr>
+                                <tr>
+                                    <td>4D</td>
+                                    <td></td>
+                                    <td>850</td>
+                                    <td>900</td>
+                                </tr>
+                                <tr>
+                                    <td>Mega volume</td>
+                                    <td></td>
+                                    <td>900</td>
+                                    <td>950</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Експрес нарощування</td>
+                                    <td></td>
+                                    <td>850</td>
+                                    <td>900</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Dyeing of lashes
+                                        <span class="small-title">(Фарбування вій)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Фарбування вій</td>
+                                    <td></td>
+                                    <td>250</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Lamination
+                                        <span class="small-title">(Ламінування вій / Ботокс)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Ламінування вій</td>
+                                    <td></td>
+                                    <td>800</td>
+                                    <td>850</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Щастя для вій </td>
+                                    <td></td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Additionally
+                                        <span class="small-title">(Додатково)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Кольорові вії</td>
+                                    <td></td>
+                                    <td>50</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Коричневі вії</td>
+                                    <td></td>
+                                    <td>50</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>L,M</td>
+                                    <td></td>
+                                    <td>50</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>"Лучіки", або Кім. Кайлі</td>
+                                    <td></td>
+                                    <td>50</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Мокрий ефект (маскара)</td>
+                                    <td></td>
+                                    <td>50</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Мікро нарощування</td>
+                                    <td></td>
+                                    <td>100</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Зняття чужої роботи</td>
+                                    <td></td>
+                                    <td>100</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Зняття нашої роботи без наступного нарощування</td>
+                                    <td></td>
+                                    <td>100</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Зняття чужої роботи без наступного нарощування</td>
+                                    <td></td>
+                                    <td>150</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="full-price-item">
+                            <p class="small-title">Прайс</p>
+                            <div class="title title-with-line"><span>price list</span></div>
+                            <table>
+                                <tr class="start-table">
+                                    <th class="title">
+                                        Brows
+                                        <span class="small-title">(Брови)</span>
+                                    </th>
+                                    <th></th>
+                                    <th>
+                                        Старший<br>
+                                        майстер
+                                    </th>
+                                    <th>
+                                        Топ<br>
+                                        майстер     
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Моделювання + фарбування брів (хна, фарба)</td>
+                                    <td></td>
+                                    <td>400</td>
+                                    <td>450</td>
+                                </tr>
+                                <tr>
+                                    <td>Моделювання + корекція брів (без фарбування)</td>
+                                    <td></td>
+                                    <td>400</td>
+                                    <td>450</td>
+                                </tr>
+                                <tr>
+                                    <td>Ламінування + моделювання + фарбування</td>
+                                    <td></td>
+                                    <td>700</td>
+                                    <td>750</td>
+                                </tr>
+                                <tr>
+                                    <td>Ламінування + моделювання (без фарбування)</td>
+                                    <td></td>
+                                    <td>650</td>
+                                    <td>700</td>
+                                </tr>
+                                <tr>
+                                    <td>Перманент брів</td>
+                                    <td></td>
+                                    <td>3500</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Корекція перманенту брів</td>
+                                    <td></td>
+                                    <td>1500</td>
+                                    <td></td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Makeup
+                                        <span class="small-title">(Макіяж)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Експрес</td>
+                                    <td></td>
+                                    <td>600</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Денний</td>
+                                    <td></td>
+                                    <td>800</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Вечірній</td>
+                                    <td></td>
+                                    <td>800-1000</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Весільний</td>
+                                    <td></td>
+                                    <td>1200</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="topic">
+                                    <th class="title">
+                                        Additionally
+                                        <span class="small-title">(Додатково)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Урок "Сам собі візажист"</td>
+                                    <td></td>
+                                    <td>1600</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Щастя для брів</td>
+                                    <td></td>
+                                    <td>250</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="full-price-item">
+                            <p class="small-title">Прайс</p>
+                            <div class="title title-with-line"><span>price list</span></div>
+                            <table>
+                                <tr class="start-table">
+                                    <th class="title">
+                                        Hair
+                                        <span class="small-title">(Перукарські послуги (залежить від довжини і густоти)</span>
+                                    </th>
+                                    <th></th>
+                                    <th>майстер</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Стрижка</td>
+                                    <td></td>
+                                    <td>400-700</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Стрижка чубчика</td>
+                                    <td></td>
+                                    <td>250-400</td>
+                                    <td></td>
+                                </tr>
+                                <tr  class="topic">
+                                    <th class="title">
+                                        Hair
+                                        <span class="small-title">(Укладки (залежить від довжини і густоти)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Брашинг рівний</td>
+                                    <td></td>
+                                    <td>350</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Брашинг накрутка</td>
+                                    <td></td>
+                                    <td>350</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Афро-накрутка<br><br>1-2 довжина</td>
+                                    <td></td>
+                                    <td>1000-1100</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>1100-1300</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>1500</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="topic">
+                                    <th class="title">
+                                        Hair
+                                        <span class="small-title">(Накрутка ізі)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>600</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>700</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>800</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="topic">
+                                    <th class="title">
+                                        Hair
+                                        <span class="small-title">(Накрутка хард)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>800</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>900</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>1000</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="topic" height="180">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Фарбування волосся <br>(Трендові техніки (airtouch, шатуш, мелірування) + тонування, захист, легка укладка)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>3300-3900</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>4000-4300</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>4500-5000</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Вихід з чорного в 1 тон + тонування, захист, легка укладка</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>3500-4000</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>4500-5000</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>5500</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Вихід з чорного в техніці + тонування, захист, легка укладка</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>4800-5800</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>5800-6800</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>6300-7300</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Контуринг (освітлення пасм біля обличчя + тонування, легка укладка)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>1000-1200</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>1300-1500</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>*велика густота</td>
+                                    <td></td>
+                                    <td>+200</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>Фарбування коренів</td>
+                                    <td></td>
+                                    <td>1200</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Тонування (без освітлення, миття голови, базовий догляд, легка укладка)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>1300-1400</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>1500-1600</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>1700</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="topic" height="170">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Фарбування в один тон (без освітлення, миття голови, базовий догляд, легка укладка)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>1700-1800</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>1900-2000</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>2100</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Блонд (освітлення кореню, тонування, захист, легка укладка)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>1800-1900</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>2000-2200</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>2300</td>
+                                    <td></td>
+                                </tr>
+                                
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Total блонд (повне освітлення, тонування, захист, легка укладка)</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>3000-3500</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>4000-4500</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>5000</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>*велика густота</td>
+                                    <td></td>
+                                    <td>+200</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Доглядова процедура глибокого зволоження Screen</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>600-650</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>700-750</td>
+                                    <td></td>
+                                </tr>
+                                <tr  class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>800-900</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title"> Пілінг шкіри голови + відновлююча маска Davines</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>600</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>700</td>
+                                    <td></td>
+                                </tr>
+                                <tr  class="last">
+                                    <td>5-6 довжина</td>
+                                    <td></td>
+                                    <td>750-800</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="topic">
+                                    <th class="title title-only-small">
+                                        <span class="small-title">Доглядова процедура Ритуал REDKEN ACIDIC</span>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1-2 довжина</td>
+                                    <td></td>
+                                    <td>600</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="last">
+                                    <td>3-4 довжина</td>
+                                    <td></td>
+                                    <td>800</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="js/app.min.js"></script>
+</body>
+</html>

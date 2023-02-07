@@ -1,0 +1,171 @@
+.full-price-popup{
+    .slick-dotted.slick-slider{
+        margin-bottom: 0px;
+    }
+    .slick-dots{
+        position: relative;
+        bottom: 0;
+        text-align: right;
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 20px;
+        li{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background-color: #F3EEE8;
+            &.slick-active{
+                background-color: #FCB2B3;
+            }
+        }
+    }
+    .popup-content{
+        padding: 20px 60px;
+    }
+    .slick-track {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        height: min-content;
+        max-height: min-content;
+    }
+    .slick-slide{
+        height: auto;
+    }
+    .slick-list{
+        height: min-content;
+        max-height: min-content;
+    }
+    .full-price-item{
+        height: min-content;
+        max-height: fit-content;
+    }
+    .popup-content{
+        overflow-y: scroll;
+        background-color: #FEFAF5;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #F3EEE8; 
+            border-radius: 20px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #FCB2B3; 
+            border-radius: 20px;
+        }
+    }
+    .small-title{
+        text-align: center;
+        margin: 0;
+    }
+    .title{
+        text-align: left;
+        font-family: 'HelloBranch';
+        font-weight: 400;
+    }
+    .topic{
+        position: relative;
+        border-bottom: 3px solid #9C9C9C;
+    }
+    table{
+        border-collapse: collapse;
+        .title{
+            font-size: 90px;
+            padding-top: 50px;
+            border-right: 1px solid #9C9C9C;
+        }
+        .title-only-small{
+            .small-title{
+                padding: 0px;
+                min-height: 70px;
+                top: 0;
+                text-align: left;
+            }
+        }
+        .small-title{
+            position: absolute;
+            background-color: #FEFAF5;
+            padding: 0px 10px;
+        }
+        .start-table{
+            padding-bottom: 30px;
+            border-bottom: 1px solid #9C9C9C;
+            .title{
+                text-align: left;
+                padding-top: 20px;
+                border-right: 0px;
+            }
+        }
+        th, td{
+            border-bottom: 1px solid;
+            padding: 20px;
+            min-width: 120px;
+            min-height: 60px;
+            text-align: center;
+            &:first-child{
+                width: 100%;
+                border-right: 1px solid;
+                padding-left: 0px;
+            }
+        }
+        .last{
+            *{
+                border-bottom: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .full-price-popup{
+        .popup-content{
+            padding: 20px;
+        }
+        table{
+            .title{
+                font-size: 60px;
+            }
+            td,th{
+                padding: 5px;
+                min-width: 60px;
+                &:first-child{
+                    padding-left: 0px;
+                    width: 100%;
+                    border-right: 1px solid;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .full-price-popup{
+        .popup-content{
+            padding: 5px;
+        }
+        .title-with-line span{
+            padding: 0px 10px;
+        }
+        table{
+            .title{
+                font-size: 40px;
+                padding-top: 30px;
+            }
+            .small-title{
+                position: static;
+                padding: 0;
+            }
+            th, td{
+                min-width: 40px;
+            }
+        }
+    }
+}
