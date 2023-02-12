@@ -1,5 +1,8 @@
 .about-us{
     position: relative;
+    overflow: hidden;
+    margin-bottom: 0px;
+    padding-bottom: 120px;
     &::before{
         content: '';
         position: absolute;
@@ -56,6 +59,7 @@
 }
 @media screen and (max-width: 991px) {
     .about-us{
+        padding-bottom: 60px;
         .title{
             font-size: 85px;
         }
@@ -80,6 +84,7 @@
 }
 @media screen and (max-width: 576px) {
     .about-us{
+        padding-bottom: 50px;
         &-wrapper{
             flex-direction: column;
         }

@@ -132,6 +132,13 @@
 
 @media screen and (max-width: 576px) {
   .header{
+    .theme-switch{
+      .slider {
+        &:before {
+          height: 102%;
+        }
+      }
+    }
     .show{
       position: fixed;
       overflow: scroll;

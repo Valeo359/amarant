@@ -9,6 +9,8 @@ module.exports = {
         __dirname + '/src/styles/scss/home/home.scss',
         __dirname + '/src/styles/scss/education/education.scss',
         __dirname + '/src/styles/scss/themes/dark-theme.scss',
+        __dirname + '/src/styles/scss/page-404.scss',
+        __dirname + '/src/styles/scss/bar.scss',
     ],
     output: {
         path: path.resolve(__dirname, 'dist'), 

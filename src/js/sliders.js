@@ -64,7 +64,14 @@ $(document).ready(function(){
         $('.full-price-list .slick-list').attr('style', `max-height: ${elemHeight}px`);
     }
 
-    $('.full-price-list').slick({
+    $('.full-price-list').on('init', function(){
+        const dotsWidth = $('.full-price-list .slick-dots').width();
+
+        if(window.innerWidth > 576){
+           return $('.full-price-popup-button').css('width', dotsWidth + 150)
+        }
+    })
+    .slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: false,
@@ -74,9 +81,14 @@ $(document).ready(function(){
             return '<a class="dot">'+(i+1)+'</a>';
         },
         arrows: true,
+        prevArrow: $('.full-price-popup-button .prev'),
+        nextArrow: $('.full-price-popup-button .next'),
     })
-    .on('afterChange', function(event, slick, currentSlide){
-        setHeight(slick.$slides.get(currentSlide));
+    .on('beforeChange', function(){
+        $('.full-price-popup .popup-content').scrollTop(-10);
+    })
+    .on('afterChange', function(event, slick, currentSlide, slide, index){
+        setHeight(slick.$slides.get(currentSlide)); 
     })
 
     const firstSlide = document.querySelector('.full-price-item.slick-current');

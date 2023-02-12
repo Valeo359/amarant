@@ -4,11 +4,13 @@ document.addEventListener('DOMContentLoaded', function(){
         $('body').addClass('no-scroll');
     })
 
-    $('.mobile-close-btn').on('click', function(){
+    $('.mobile-close-btn').on('click', closeMobile)
+    $('.header-nav-item').on('click', closeMobile)
+
+    function closeMobile(){
         $('.header-nav-list').removeClass('show');
         $('body').removeClass('no-scroll')
-    })
-
+    }
     
 
     // faq
@@ -33,5 +35,16 @@ document.addEventListener('DOMContentLoaded', function(){
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
+    });
+
+    // For table
+
+    const titleWithSmall = $('.title-only-small');
+
+    titleWithSmall.each(function(item){
+        const smallTitleHeight = $(titleWithSmall[item]).find('.small-title').height() + 5;
+        const parentTitle = $(titleWithSmall[item]).parent();
+        
+        parentTitle.css('height', `${smallTitleHeight}px`)
     });
 })

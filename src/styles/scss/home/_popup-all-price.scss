@@ -1,10 +1,35 @@
 .full-price-popup{
+    .slider-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        margin-left: auto;
+        .next{
+            margin-left: auto;
+        }
+        .prev{
+            margin-right: auto;
+        }
+    }
+    .slick-disabled{
+        display: none !important;
+    }
+
+    .slick-arrow{
+        width: 58px;
+        height: 40px;
+        stroke: #3F3F3F;
+        fill: transparent;
+    }
     .slick-dotted.slick-slider{
         margin-bottom: 0px;
     }
     .slick-dots{
-        position: relative;
-        bottom: 0;
+        width: fit-content;
+        margin-left: auto;
+        right: 75px;
+        bottom: -70px;
         text-align: right;
         padding: 10px 0px;
         display: flex;
@@ -113,6 +138,7 @@
                 width: 100%;
                 border-right: 1px solid;
                 padding-left: 0px;
+                text-align: left;
             }
         }
         .last{
@@ -129,6 +155,9 @@
             padding: 20px;
         }
         table{
+            .title-only-small .small-title{
+                min-height: 50px;
+            }
             .title{
                 font-size: 60px;
             }
@@ -148,6 +177,21 @@
 
 @media screen and (max-width: 576px){
     .full-price-popup{
+        .popup-content{
+            max-width: 95vw;
+        }
+        .slick-dots{
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .slider-buttons{
+            padding: 0px 10px;
+        }
+        .slick-arrow{
+            width: 48px;
+            height: 30px;
+        }
         .popup-content{
             padding: 5px;
         }
