@@ -158,7 +158,12 @@
 @media screen and (max-width: 576px) {
     .courses-popups{
         .popup-content{
+            max-width: 95vw;
+            max-height: 95vh;
             overflow: scroll;
+        }
+        .number{
+            top: 10px;
         }
         .popup-container{
             flex-direction: column-reverse;
@@ -170,6 +175,8 @@
             font-size: 20px;
             text-align: center;
             padding-bottom: 25px;
+            margin-right: 0px;
+            margin-bottom: 30px;
         }
         .popup-list{
             padding-top: 20px;
@@ -189,8 +196,8 @@
             font-size: 20px;
         }
         .online-entry{
-            margin-top: 40px;
             margin: 0 auto;
+            margin-top: 40px;
         }
     }
 }

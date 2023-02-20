@@ -1,20 +1,4 @@
 $(document).ready(function(){
-    $('.popup').on('click', function(e){
-        if(!e.target.closest('.popup-content') || e.target.closest('.popup-close')){
-            $(this).removeClass('show');
-            $('body').removeClass('no-scroll');
-        }
-    });
-
-    // just add to btn data-popup="popup-class"
-    
-    $('[data-popup]').on('click', function(){
-        const popup = $(this).data('popup');
-
-        $(`.${popup}`).addClass('show');
-        $('body').addClass('no-scroll');
-    })
-
     //footer popup
 
     $('.footer-background').on('click', function(){
@@ -95,13 +79,39 @@ $(document).ready(function(){
 
     $('input[type="tel"]').on('input', function(){
         phoneFormat(this);
+    })    
+
+    //courses popups
+
+    $('.courses-popups .online-entry').on('click', function(){
+        const dataCategory = $(this).data('category');
+        const dataCourses = $(this).data('name');
+        const categoryName = $('.education-entry-popop .courses-category');
+        const coursesName = $('.education-entry-popop .courses-name');
+
+        categoryName.html(dataCategory);
+        coursesName.html(dataCourses);
     })
 
-    // certificate
+    /* ==========================================
+    ------------common popup code---------------- 
+    =============================================*/
 
-    $('.certificate-btn').on('click', function(){
-        $('#certificate-popup').addClass('show');
-        $('body').addClass('no-scroll')
-    })
+    $('.popup').on('click', function(e){
+        if(!e.target.closest('.popup-content') || e.target.closest('.popup-close')){
+            $(this).removeClass('show');
+            $('body').removeClass('no-scroll');
+        }
+    });
+
+    // just add to btn data-popup="popup-class"
     
+    $('[data-popup]').on('click', function(){
+        const popup = $(this).data('popup');
+        $(`[class*="popup"]`).removeClass('show');
+        $('body').removeClass('no-scroll');
+
+        $(`.${popup}`).addClass('show');
+        $('body').addClass('no-scroll');
+    })
 })

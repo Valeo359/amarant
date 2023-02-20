@@ -200,6 +200,19 @@ h6{
 
 .footer{
   &-background{
-    background-image: url('../assets/img/footer/dark-map.jpg')
+    background-image: url('../assets/img/footer/dark-map.png');
+    background-color: #343331;
+  }
+  .contacts{
+    background-color: #3F3F3F;
+  }
+  .copyriting{
+    background-color: #575656;
+  }
+  .popup-close{
+    svg{
+      fill: #404040;
+      stroke: #404040;
+    }
   }
 }

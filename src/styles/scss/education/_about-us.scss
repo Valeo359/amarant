@@ -49,6 +49,10 @@
 
 @media screen and (max-width: 1200px) {
     .about-us{
+        &::before{
+            width: 800px;
+            height: 800px;
+        }
         .title{
             font-size: 110px;
         }
@@ -70,6 +74,10 @@
 }
 @media screen and (max-width: 758px) {
     .about-us{
+        &::before{
+            width: 500px;
+            height: 500px;
+        }
         .title{
             font-size: 65px;
             padding-bottom: 15px;
@@ -85,6 +93,13 @@
 @media screen and (max-width: 576px) {
     .about-us{
         padding-bottom: 50px;
+        .small-title{
+            text-align: center;
+        }
+        .title{
+            text-align: center;
+            border: none;
+        }
         &-wrapper{
             flex-direction: column;
         }

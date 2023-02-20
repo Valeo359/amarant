@@ -221,6 +221,7 @@
             max-width: none;
             flex-direction: column-reverse;
             position: relative;
+            padding: 20px 10px 29px 20px;
             img{
                 width: 70%;
                 margin-left: auto;
@@ -228,7 +229,7 @@
             .content-btn{
                 svg{
                     position: absolute;
-                    bottom: 65%;
+                    bottom: 60%;
                 }
             }
         }

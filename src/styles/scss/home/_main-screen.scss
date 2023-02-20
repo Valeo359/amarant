@@ -76,18 +76,22 @@
       }
     }
     .callback-btn{
-        width: 74px;
-        height: 74px;
-        border: 1px solid #F2AEAF;
-        border-radius: 100%;
-        background-color: transparent;
-        box-shadow: 0 0 0 3px #f3eee8, 0 0 0 5px #f2aeaf;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: #F2AEAF;
-        svg{
-          width: 60%;
-        }
+      width: 74px;
+      height: 74px;
+      border: 1px solid #F2AEAF;
+      border-radius: 100%;
+      background-color: transparent;
+      box-shadow: 0 0 0 3px #f3eee8, 0 0 0 5px #f2aeaf;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #F2AEAF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      svg{
+        width: 60%;
+      }
     }
 }
 

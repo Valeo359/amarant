@@ -92,5 +92,5 @@ $(document).ready(function(){
     })
 
     const firstSlide = document.querySelector('.full-price-item.slick-current');
-    setHeight(firstSlide);
+    if(firstSlide) setHeight(firstSlide);
 })
