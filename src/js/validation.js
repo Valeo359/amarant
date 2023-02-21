@@ -35,6 +35,7 @@ $(document).ready(function(){
                 },
                 phone: {
                     required: true,
+                    minlength: 18,
                 }
             },
             messages: {
@@ -46,7 +47,7 @@ $(document).ready(function(){
                 },
                 phone: {
                     required: "Веддіть номер телефону",
-                    min: "Введіть повний номер телефону"
+                    minlength: "Введіть повний номер телефону"
                 }
             }
         })

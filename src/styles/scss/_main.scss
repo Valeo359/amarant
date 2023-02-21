@@ -140,7 +140,9 @@ section{
     width: fit-content;
   }
 }
-
+a{
+  cursor: pointer;
+}
 @media screen and (max-width: 1200px) { 
   body{
     font-size: 23px;
