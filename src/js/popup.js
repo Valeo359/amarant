@@ -12,7 +12,14 @@ $(document).ready(function(){
     ------------common popup code---------------- 
     =============================================*/
 
-    $('.popup').on('click', function(e){
+    // $('.popup').on('click', function(e){
+    //     if(!e.target.closest('.popup-content') || e.target.closest('.popup-close')){
+    //         $(this).removeClass('show');
+    //         $('body').removeClass('no-scroll');
+    //     }
+    // });
+
+    $('body').on('click','.popup',function(e){
         if(!e.target.closest('.popup-content') || e.target.closest('.popup-close')){
             $(this).removeClass('show');
             $('body').removeClass('no-scroll');

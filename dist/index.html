@@ -10,9 +10,17 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/home.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/img/tild3631-3030-4039-b163-616363633537__favicon_1.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" title="theme" href="#">
     <script src="js/theme.js"></script>
+        <style>
+        .ajax-success{
+            display: none;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body class="home">
@@ -48,7 +56,7 @@
                             <a href="#about">About</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="./pages/coureses.html">education</a>
+                            <a href="./pages/courses.html">education</a>
                         </li>
                         <li class="header-nav-item">
                             <a href="#price">Price</a>
@@ -1478,7 +1486,7 @@
                 </div>
                 <div class="education-sign">
                     <img src="assets/img/home-education-small.png" alt="">
-                    <a href="./pages/coureses.html" class="pink-button button-center">Записатися</a>
+                    <a href="pages/coureses.html" class="pink-button button-center">Записатися</a>
                 </div>
             </div>
         </div>
@@ -1776,7 +1784,7 @@
                         <path d="M16 1L1 15.7965" stroke="" stroke-width="2" stroke-linecap="round"></path>
                     </svg>
                 </div>
-                <form id="certificate-popup" class="popup-form" type="submit">
+                <form id="certificate-popup-form" class="popup-form" type="submit">
                     <p>Отримати подарунковий сертифікат</p>
                     <h5 class="title">certificate</h5>
                     <div class="input-wrapper">
@@ -2904,5 +2912,38 @@
     <script src="js/app.min.js"></script>
     <script src="https://widget.easyweek.io/widget.js"></script> 
     <script> new EasyWeekWidget({ url: 'https://widget.easyweek.io/amarant-beauty', trigger: '.online-entry' }) </script>
+    <script>
+        //send certificate
+        $(document).ready(function() {
+            $('body').on('submit',"#certificate-popup-form, #call-back-form",function(e){
+                e.preventDefault();
+                let formData = $(this).serialize();
+                let form = $(this);
+                $.ajax({
+                    url: 'https://amarant-beauty.com/sendTelega.php',
+                    type: 'POST',
+                   dataType: 'JSON',
+                    data: formData,
+                })
+                .done(function(response) {
+                    console.log('resposne data',response);
+                    if(response.success){
+                        form.find('.ajax-success').slideToggle();
+                        form.find('.hide-on-success ').slideToggle();
+                        setTimeout(function(){
+                            form.find('.ajax-success').slideToggle();
+                            form.find('.hide-on-success ').slideToggle();
+                        }, 5000)
+                    }
+                })
+                .fail(function(error) {
+                    console.log('eto errror',error);
+                    console.log("error");
+                })
+                
+            })
+        });
+    </script>
+
 </body>
 </html>
