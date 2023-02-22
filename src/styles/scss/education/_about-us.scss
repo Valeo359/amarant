@@ -58,6 +58,9 @@
         }
         .about-us-pic{
             max-width: 50%;
+            .small-pic{
+                bottom: -7vw;
+            }
         }
     }
 }
@@ -69,6 +72,9 @@
         }
         .about-us-pic{
             max-width: 50%;
+            .small-pic{
+                bottom: 0px;
+            }
         }
     }
 }

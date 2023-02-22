@@ -40,11 +40,13 @@ document.addEventListener('DOMContentLoaded', function(){
     // For table
 
     const titleWithSmall = $('.title-only-small');
-
-    titleWithSmall.each(function(item){
-        const smallTitleHeight = $(titleWithSmall[item]).find('.small-title').height() + 5;
-        const parentTitle = $(titleWithSmall[item]).parent();
-        
-        parentTitle.css('height', `${smallTitleHeight}px`)
-    });
+    
+    if(titleWithSmall.length){
+        titleWithSmall.each(function(item){
+            const smallTitleHeight = $(titleWithSmall[item]).find('.small-title').height() + 5;
+            const parentTitle = $(titleWithSmall[item]).parent();
+            
+            parentTitle.css('height', `${smallTitleHeight}px`)
+        });
+    }
 })

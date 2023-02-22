@@ -5,17 +5,6 @@
         position: relative;
         z-index: 3;
     }
-    &::after{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 800px;
-        height: 800px;
-        right: -30%;
-        bottom: -50%;
-        z-index: 2;
-        background: radial-gradient(50% 50% at 50% 50%, rgba(252, 178, 179, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
-    }
     &::before{
         content: '';
         display: block;
@@ -82,6 +71,14 @@
         }
         .online-entry{
             margin-top: 40px;
+        }
+        a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            color: #3C3030;
         }
     }
     &-instagram{
@@ -197,6 +194,7 @@
         .title-divided{
            display: block;
            margin-right: auto;
+           margin-left: auto;
             .title-second-word{
                 left: 20%;
             }

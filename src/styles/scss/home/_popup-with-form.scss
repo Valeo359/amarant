@@ -43,6 +43,7 @@
         background-color: #fff;
         font-size: 40px;
         font-family: 'AlumniSans', sans-serif;
+        margin-bottom: 10px;
         &:focus{
             border: 2px solid #FCB2B3;
         }
@@ -52,7 +53,6 @@
     }
     .popup-form-wrapper{
         display: flex;
-        margin-bottom: 35px;
         input[type=number]::-webkit-inner-spin-button, 
         input[type=number]::-webkit-outer-spin-button {  
             opacity: 1;
@@ -78,7 +78,6 @@
         flex-direction: column;
         margin-right: 5px;
         align-items: stretch;
-        margin-bottom: 10px;
     }
     input.error{
         border: 2px solid red !important;
@@ -175,9 +174,6 @@
             margin-top: 5px;
             width: 100%;
             margin-left: 0px;
-        }
-        .phone{
-            margin-bottom: 20px;
         }
         input{
             width: 100%;

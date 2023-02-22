@@ -28,13 +28,22 @@
     }
     &.show{
         opacity: 1;
-        height: 101vh;
+        height: 100%;
     }
 }
 @media screen and (max-width: 1460px) {
     .popup{
         &-content{
             max-width: 90vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .popup{
+        &-content{
+            max-width: 95vw;
+            max-height: 95vh;
         }
     }
 }

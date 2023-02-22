@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+}
 
 body{
   margin: 0;
@@ -64,10 +67,6 @@ ul{
 
 button{
   cursor: pointer;
-  &:hover{
-    transform: scale(1.05);
-    transition: .2s all ease;
-  }
 }
 
 .online-entry{
