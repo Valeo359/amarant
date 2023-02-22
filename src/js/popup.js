@@ -25,6 +25,11 @@ $(document).ready(function(){
             $('body').removeClass('no-scroll');
         }
     });
+    
+    $('body').on('click','.popup-close',function(e){
+        $(this).parent().parent().removeClass('show');
+        $('body').removeClass('no-scroll');
+    });
 
     // just add to btn data-popup="popup-class"
     
