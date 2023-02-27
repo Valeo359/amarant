@@ -454,11 +454,19 @@
                         <p>
                             В нас можливі як групові та індивідуальні курси. Навчання проводять практикуючі топ-майстри з інструкторським досвідом.
                         </p>
+                        <div class="owner-text">
+                            <span class="onwer-name">
+                                <span>Влада </span>Владиченко
+                            </span>
+                            <div class="owner-subtext">
+                                <span class="first"></span>
+                                <span class="second">Засновниця салону</span>
+                            </div>
+                        </div>
                 </div>
                 <div class="about-us-pic">
                     <img class="main-pic" src="../assets/img/courses/courses-about-big-pic.png" alt="">
                     <img class="small-pic" src="../assets/img/courses/courses-about-small-pic.png" alt="">
-                    <img class="small-pic small-pic-mob" src="../assets/img/courses/courses-about-small-pic-mob.png" alt="">
                 </div>
             </div>
         </div>
@@ -571,7 +579,7 @@
                             <span class="certificate">Після курсу видається сертифікат!</span>
                         </div>
                         <div class="popup-text">
-                            <p class="popup-title">Базовий курс “Майстер з Нуля”</p>
+                            <p class="popup-title">Підвищення кваліфікації</p>
                             <ul class="popup-list">
                                 <li>1 день навчання (відпрацювання на 2 моделях)</li>
                                 <li>Класифікація фрез</li>
@@ -792,18 +800,19 @@
                 </div>
                  <input type='hidden' name='course_name' type="text">
                 
-                <div class="input-wrapper">
+                <div class=" hide-on-success   input-wrapper">
                     <input type="text" class="name" placeholder="Ім'я" name="name">
                 </div>
-                <div class="input-wrapper">
+                <div class=" hide-on-success   input-wrapper">
                     <input type="email" class="email" placeholder="email" name="email">
                 </div>
-                <div class="input-wrapper">
+                <div class=" hide-on-success   input-wrapper">
                     <input type="tel" class="phone" placeholder="+380 (99) 999 99 99" value="+380" name="phone" maxlength="18">
                 </div>
                 
-                <button class="entry-popop-submit popup-form-button pink-button button-center">Записатися</button>
-                <span class="policy">
+                <button type="submit"  class=" hide-on-success   entry-popop-submit popup-form-button pink-button button-center">Записатися</button>
+                <h3 class='ajax-success'>Ваша заявка відправлена! </h3>
+                <span class="policy hide-on-success">
                     Натискаючи на кнопку я даю згоду на обробку персональних даних та <br>
                     погоджуюсь з умовами оферти та політики конфіденційності.
                 </span>
@@ -844,8 +853,9 @@
                         form.find('.ajax-success').slideToggle();
                         form.find('.hide-on-success ').slideToggle();
                         setTimeout(function(){
-                            form.find('.ajax-success').slideToggle();
-                            form.find('.hide-on-success ').slideToggle();
+                            form.parent().find('.popup-close').click();
+                            // form.find('.ajax-success').slideToggle();
+                            // form.find('.hide-on-success ').slideToggle();
                         }, 5000)
                     }
                 })

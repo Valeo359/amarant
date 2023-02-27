@@ -409,9 +409,6 @@
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-1.png" alt="">
                                         </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-1.png" alt="">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-right-block">
@@ -479,9 +476,6 @@
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-2.png" alt="">
                                         </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-2.png" alt="">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-right-block">
@@ -530,9 +524,6 @@
                                     <div class="slider-pictures">
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-3.png" alt="">
-                                        </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-3.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -737,9 +728,6 @@
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-4.png" alt="">
                                         </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-4.png" alt="">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-right-block">
@@ -925,9 +913,6 @@
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-5.png" alt="">
                                         </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-5.png" alt="">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-right-block">
@@ -989,9 +974,6 @@
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-6.png" alt="">
                                         </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-6.png" alt="">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-right-block">
@@ -1036,9 +1018,6 @@
                                     <div class="slider-pictures">
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-7.png" alt="">
-                                        </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-7.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1197,9 +1176,6 @@
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-8.png" alt="">
                                         </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-8.png" alt="">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="slider-right-block">
@@ -1266,9 +1242,6 @@
                                     <div class="slider-pictures">
                                         <div class="slider-main-pic">
                                             <img src="./assets/img/price-list/main-pic-9.png" alt="">
-                                        </div>
-                                        <div class="slider-second-pic">
-                                            <img src="./assets/img/price-list/popup-slider/small-pic-9.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1744,7 +1717,7 @@
                 <form id="call-back-form" class="popup-form" type="submit">
                     <p>Хочете ми зателефонуємо Вам рівно о:</p>
                     <h5 class="title">callback</h5>
-                    <div class="popup-form-wrapper">
+                    <div class="hide-on-success popup-form-wrapper">
                         <div class="number-input input-wrapper">
                             <div class="number-arrows">
                                 <button class="minus" type="button">-</button>
@@ -1763,12 +1736,13 @@
                             <input class="date" type="date" name="data" min="2020-01-02" max="9999-12-31" placeholder="день/місяць">
                         </div>
                     </div>
-                    <div class="input-wrapper">
+                    <div class="hide-on-success input-wrapper">
                         <input type="tel" class="phone" placeholder="+380 (99) 999 99 99" value="+380" name="phone" min="3" maxlength="18">
                     </div>
 
-                    <button class="callback-submit popup-form-button pink-button button-center">Чекаю на дзвінок</button>
-                    <span class="policy">
+                    <button class="hide-on-success callback-submit popup-form-button pink-button button-center">Чекаю на дзвінок</button>
+                    <h3 class='ajax-success'>Ваша заявка відправлена! </h3>
+                    <span class="policy hide-on-success">
                         Натискаючи на кнопку я даю згоду на обробку персональних даних та <br>
                         погоджуюсь з умовами оферти та політики конфіденційності.
                     </span>
@@ -1787,17 +1761,18 @@
                 <form id="certificate-popup-form" class="popup-form" type="submit">
                     <p>Отримати подарунковий сертифікат</p>
                     <h5 class="title">certificate</h5>
-                    <div class="input-wrapper">
+                    <div class="hide-on-success input-wrapper">
                         <input type="number" class="sum" placeholder="сума" name="sum" >
                     </div>
-                    <div class="input-wrapper">
+                    <div class="hide-on-success input-wrapper">
                         <input type="tel" class="phone" placeholder="+380 (99) 999 99 99" value="+380" name="phone" maxlength="18">
                     </div>
-                    <div class="input-wrapper">
+                    <div class=" hide-on-success input-wrapper">
                         <input type="text" class="name" placeholder="Ім'я" name="name">
                     </div>
-                    <button class="certificate-submit popup-form-button pink-button button-center">Чекаю на дзвінок</button>
-                    <span class="policy">
+                    <button class="hide-on-success certificate-submit popup-form-button pink-button button-center">Чекаю на дзвінок</button>
+                    <h3 class='ajax-success'>Ваша заявка відправлена! </h3>
+                    <span class="policy hide-on-success">
                         Натискаючи на кнопку я даю згоду на обробку персональних даних та <br>
                         погоджуюсь з умовами оферти та політики конфіденційності.
                     </span>
@@ -2929,10 +2904,12 @@
                     console.log('resposne data',response);
                     if(response.success){
                         form.find('.ajax-success').slideToggle();
-                        form.find('.hide-on-success ').slideToggle();
+                        form.find('.hide-on-success').slideToggle();
                         setTimeout(function(){
-                            form.find('.ajax-success').slideToggle();
-                            form.find('.hide-on-success ').slideToggle();
+                            form.parent().find('.popup-close').click();
+                            
+                            // form.find('.ajax-success').slideToggle();
+                            // form.find('.hide-on-success ').slideToggle();
                         }, 5000)
                     }
                 })

@@ -27,9 +27,6 @@
         padding-bottom: 25px;
         border-bottom: 1px solid #3f3f3f;
     }
-    .small-pic-mob{
-        display: none;
-    }
     .about-us-pic{
         position: relative;
         max-width: 60%;
@@ -41,8 +38,30 @@
         }
         .small-pic{
             position: absolute;
-            right: 65%;
-            bottom: 0;
+            right: 55%;
+            bottom: 75px;
+            width: 380px;
+        }
+    }
+    .owner-text{
+        font-size: 30px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        .owner-subtext{
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            .first{
+                flex-grow: 1;
+                height: 1px;
+                background-color: #3f3f3f;
+            }
+            .second{
+                margin-left: 10px;
+            }
         }
     }
 }
@@ -58,8 +77,10 @@
         }
         .about-us-pic{
             max-width: 50%;
+        }
+        .about-us-pic{
             .small-pic{
-                bottom: -7vw;
+                width: 30vw;
             }
         }
     }
@@ -73,12 +94,12 @@
         .about-us-pic{
             max-width: 50%;
             .small-pic{
-                bottom: 0px;
+                bottom: -20px;
             }
         }
     }
 }
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 768px) {
     .about-us{
         &::before{
             width: 500px;
@@ -91,7 +112,7 @@
         .about-us-pic{
             max-width: 50%;
             .small-pic{
-                bottom: -40px;
+                bottom: 60px;
             }
         }
     }
@@ -114,21 +135,33 @@
         }
         .about-us-pic{
             max-width: 100%;
-            margin-top: 50%;
+            margin-top: 10%;
             justify-content: flex-start;
             .main-pic{
                 width: 70%;
             }
             .small-pic{
                 bottom: 65%;
+                width: 50%;
                 right: 0;
             }
         }
-        .small-pic{
-            display: none;
-        }
-        .small-pic-mob{
-            display: block;
+        .owner-text{
+            .onwer-name{
+                display: flex;
+                flex-direction: column;
+            }
+            .owner-subtext{
+                margin-top: 5px;
+                flex-direction: column;
+                .first{
+                    width: 100%;
+                    margin-bottom: 5px;
+                }
+                .second{
+                    margin-left: 0; 
+                }
+            }
         }
     }
 }

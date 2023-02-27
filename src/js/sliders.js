@@ -64,9 +64,12 @@ $(document).ready(function(){
         $('.full-price-list .slick-list').attr('style', `max-height: ${elemHeight}px`);
     }
 
-    $('.full-price-list').on('init', function(){
+    $('.full-price-list').on('init', function(slick){
         const dotsWidth = $('.full-price-list .slick-dots').width();
+        const currentSlide = slick.currentTarget.querySelector('.slick-active');
 
+        setHeight(currentSlide)
+                
         if(window.innerWidth > 576){
            return $('.full-price-popup-button').css('width', dotsWidth + 150)
         }
