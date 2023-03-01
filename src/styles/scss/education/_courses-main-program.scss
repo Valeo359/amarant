@@ -1,16 +1,5 @@
 .courses-main-program{
     position: relative;
-    // &::before{
-    //     content: '';
-    //     position: absolute;
-    //     display: block;
-    //     width: 800px;
-    //     height: 800px;
-    //     right: -90px;
-    //     top: 50%;
-
-    //     background: radial-gradient(50% 50% at 50% 50%, rgba(252, 178, 179, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
-    // }
     .courses-wrapper{
         display: flex;
         position: relative;
@@ -95,6 +84,9 @@
         justify-content: flex-end;
         .content-btn{
             margin-left: 0px;
+        }
+        img{
+            width: 100%;
         }
     }
 }

@@ -158,6 +158,9 @@
                 }
             }
             .price-slider-table{
+                td{
+                    color: #3F3F3F;
+                }
                 &::-webkit-scrollbar {
                     width: 5px;
                 }

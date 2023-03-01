@@ -39,6 +39,9 @@
                 position: absolute;
                 top: 0;
                 animation: moving 5s infinite linear;
+                -o-animation: moving 5s infinite linear;
+                -moz-animation: moving 5s infinite linear;
+                -webkit-animation: moving 5s infinite linear
             }
         }
         img{
@@ -46,16 +49,6 @@
         }
         .slick-list{
             width: 60%;
-            // position: relative;
-            // &::after,
-            // &::before{
-            //     display: block;
-            //     content: '';
-            //     width: 100%;
-            //     max-width: 280px;
-            //     height: 1px;
-            //     background-color: #3F3F3F;
-            // }
         }   
         .slick-dots{
             display: flex;
@@ -209,5 +202,11 @@
 }
 
 @keyframes moving {
-    100% {transform: rotate(360deg);}
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
